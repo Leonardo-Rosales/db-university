@@ -91,4 +91,7 @@ WHERE `id` = 58
 
 ```SQL
 
+DELETE FROM `students`
+WHERE `id` = 5001
+
 ```
