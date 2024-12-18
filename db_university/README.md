@@ -48,6 +48,10 @@ WHERE `date` = '2020-06-20' AND `hour` > '14:00:00'
 
 ```SQL
 
+SELECT *
+FROM `degrees`
+WHERE `level` = 'magistrale'
+
 ```
 ### 7. Da quanti dipartimenti è composta l'università? (12)
 
