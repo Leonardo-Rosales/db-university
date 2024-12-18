@@ -21,6 +21,10 @@ WHERE `cfu` > 10
 
 ```SQL
 
+SELECT *
+FROM `students`
+WHERE `date_of_birth` BETWEEN '1994-12-18' AND '2024-12-18'
+
 ```
 ### 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 
