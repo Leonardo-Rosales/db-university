@@ -81,6 +81,10 @@ VALUES (5001, 75, 'Leonardo', 'Rosales', '2003-09-03', 'RSLLRD03P03H501I', '2024
 
 ```SQL
 
+UPDATE `teachers`
+SET `office_number` = 126
+WHERE `id` = 58
+
 ```
 
 ### 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
