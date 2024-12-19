@@ -58,6 +58,12 @@ WHERE `degrees`.`name` = 'Corso di Laurea in Economia'
 
 ```SQL
 
+SELECT  `departments`.`name` AS `department_name`, `degrees`.*
+FROM `degrees`
+JOIN `departments`
+ON `departments`.`id` = `degrees`.`department_id`
+WHERE `degrees`.`name` LIKE 'Corso di Laurea Magistrale%' AND `departments`.`name` = 'Dipartimento di Neuroscienze'
+
 ```
 
 ### 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
