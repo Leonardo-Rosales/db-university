@@ -28,6 +28,14 @@ WHERE `degrees`.`name` LIKE 'Corso di Laurea Magistrale%' AND `departments`.`nam
 
 ```SQL
 
+SELECT `courses`.*, `teachers`.`name` AS `teacher_name`, `teachers`.`surname` AS `teacher_surname`, `teachers`.`id` AS `teacher_id`
+FROM `courses`
+JOIN `course_teacher`
+ON `courses`.`id` = `course_id`
+JOIN `teachers`
+ON `teacher_id` = `teachers`.`id`
+WHERE `teachers`.`id` = 44
+
 ```
 
 ### 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
