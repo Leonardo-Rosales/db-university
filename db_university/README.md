@@ -34,6 +34,10 @@ GROUP BY `exam_id`
 
 ```SQL
 
+SELECT `department_id`, COUNT(*) AS `degrees_number`
+FROM `degrees`
+GROUP BY `department_id`
+
 ```
 
 ### Query con GROUP JOIN
