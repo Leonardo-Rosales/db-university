@@ -14,6 +14,10 @@ GROUP BY YEAR(`enrolment_date`)
 
 ```SQL
 
+SELECT `office_address`, COUNT(*) AS `number_teachers`
+FROM `teachers`
+GROUP BY `office_address`
+
 ```
 
 ### 3. Calcolare la media dei voti di ogni appello d'esame
