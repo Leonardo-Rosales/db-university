@@ -89,4 +89,14 @@ WHERE `departments`.`name` = 'Dipartimento di Matematica'
 
 ```SQL
 
+SELECT `students`.`name` AS `student_name`, `students`.`surname` AS `student_surname`, COUNT(`exam_student`.`exam_id`) AS `attempts`, MAX(`exam_student`.`vote`)
+FROM `students`
+JOIN `exam_student`
+ON `students`.`id` = `exam_student`.`student_id`
+JOIN `exams`
+ON `exam_student`.`exam_id` = `exams`.`id`
+WHERE `exam_student`.`vote` >= 18
+GROUP BY `students`.`id`
+ORDER BY `students`.`name` ASC, `students`.`surname` ASC
+
 ```
